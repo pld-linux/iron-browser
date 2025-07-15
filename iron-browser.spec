@@ -132,15 +132,15 @@ echo "%{svnver}" > src/build/LASTCHANGE.in
 
 #%{__sed} -e 's,@localedir@,%{_libdir}/%{name},' %{SOURCE4} > find-lang.sh
 #
-#%patch0 -p1
-#%patch1 -p1
-#%patch2 -p1
-#%patch3 -p0
-#%patch4 -p1
-#%patch5 -p1
-#%patch6 -p1
+#%%patch0 -p1
+#%%patch1 -p1
+#%%patch2 -p1
+#%%patch3 -p0
+#%%patch4 -p1
+#%%patch5 -p1
+#%%patch6 -p1
 #cd src
-#%patch7 -p0
+#%%patch7 -p0
 #cd ..
 
 # drop bundled libs, from gentoo
